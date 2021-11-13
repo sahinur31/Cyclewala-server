@@ -116,7 +116,6 @@ async function run() {
       res.send(review);
     });
     // cancel an order
-    // cancel an order
     app.delete("/myorders/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: ObjectId(id) };
